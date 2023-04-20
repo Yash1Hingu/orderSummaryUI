@@ -18,12 +18,12 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 20px;
 }
 
 .container{
     width: 400px;
-    height: 600px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 3px 20px 0px #afafaf;
@@ -55,5 +55,48 @@ main{
 .ordersu .plan{
     display: flex;
     align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.plan span{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 6px 0 0 20px;
+}
+.plan a{
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.submitbtn,.cancelbtn{
+    cursor: pointer;
+    width: 100%;
+    margin: 15px 0 5px 0;
+    padding: 15px;
+    border: none;
+    background-color: hsl(251, 100%, 50%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    box-shadow: 1px 5px 14px 0px hsl(251deg 100% 50% / 47%);
+}
+.submitbtn:hover{
+    background-color: hsl(251, 100%, 60%);
+}
+.cancelbtn{
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: hsl(223, 47%, 23%);
+    opacity: 0.7;
+}
+
+@media screen and (max-width:530px){
+    .container{
+        width: 350px;
+    }
 }
 
